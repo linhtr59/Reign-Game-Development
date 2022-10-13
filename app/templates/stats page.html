@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block title %}
+Statitics
+{% endblock %}
+
+{% block content %}
+<!--Container for Page Header -->
+<div class="container border border-dark mt-5 mb-1 title-container">
+    <h1>STATISTICS</h1>
+</div>
+
+<!--Container for Player Statistics -->
+<div class="container border border-dark stat-container">
+    <!-- First Row of Player Statistics -->
+    <div class="row mx-5 mt-5">
+        <div class="col px-5">
+            <div class="p-3 border border-dark stat-header">Longest Rule</div>
+        </div>
+        <div class="col px-5">
+            <div class="p-3 border border-dark stat-header">Shortest Rule</div>
+        </div>
+    </div>
+
+    <div class="row mx-5 mt-1">
+        <div class="col px-5">
+            <div class="p-3 border border-dark stat-value" id="longest rule">0</div>
+        </div>
+        <div class="col px-5">
+            <div class="p-3 border border-dark stat-value" id="shortest rule">0</div>
+        </div>
+    </div>
+
+    <!-- Second Row of Player Statistics -->
+    <div class="row mx-5 mt-5">
+        <div class="col px-5">
+            <div class="p-3 border border-dark stat-header">Average Time Ruling</div>
+        </div>
+        <div class="col px-5">
+            <div class="p-3 border border-dark stat-header">Games Played</div>
+        </div>
+    </div>
+
+    <div class="row mx-5 mt-1">
+        <div class="col px-5">
+            <div class="p-3 border border-dark stat-value" id="average time ruling">0</div>
+        </div>
+        <div class="col px-5">
+            <div class="p-3 border border-dark stat-value" id="games played">0</div>
+        </div>
+    </div>
+
+    <!-- Third Row of Player Statistics -->
+    <div class="row mx-5 mt-5">
+        <div class="col px-5">
+            <div class="p-3 border border-dark stat-header">Number of Unique Endings found</div>
+        </div>
+        <div class="col px-5">
+            <div class="p-3 border border-dark stat-header">Another Trackable Stat</div>
+        </div>
+    </div>
+
+    <div class="row mx-5 mt-1 mb-5">
+        <div class="col px-5">
+            <div class="p-3 border border-dark stat-value" id="num unique endings">0</div>
+        </div>
+        <div class="col px-5">
+            <div class="p-3 border border-dark stat-value" id="another stat">0</div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

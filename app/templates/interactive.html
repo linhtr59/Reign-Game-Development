@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}
+Game page
+{% endblock %}
+
+{% block content %}
+<div class=" gamebox container mt-5 border-dark">
+    <div class=" row">
+        <div class="current-stat col-3" id="stat1"> 0 </div>
+        <div class="current-stat col-3" id="stat2"> 0 </div>
+        <div class="current-stat col-3" id="stat3"> 0 </div>
+        <div class="current-stat col-3" id="stat4"> 0 </div>
+    </div>
+
+    <div class="row">
+        <div class=" prompt col mt-5">
+            <h1> Prompts </h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="prompt col">
+            <p> What needs to be said</p>
+        </div>
+    </div>
+
+
+    <div class="character front"></div>
+
+
+    <div class="row mt-5 mb-5">
+        <div class="col-3"> </div>
+        <div class="col-3">
+            <div class="choice1"><button onclick="funct1" id="option1"> option 1</button></div>
+        </div>
+        <div class="col-3">
+            <div class="choice2"><button onclick="funct1" id="option2"> option 2</button></div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+    <div class="row mt-5 mb-5"></div>
+
+</div>
+
+<div class="popup container- border-dark" id="popup">
+    <div class="row">
+        <div class="col-3">
+            <div class="button-for-popup"> <button onclick="show('popup')">X</button> </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h5 class="card-title">You lasted <span id="score">{X}</span> years </h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Your Longest Rule was:<span id="hiscore">{Y}</span> </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p> You have played <span id="gamesplayed">{Z}</span> games</p>
+        </div>
+    </div>
+
+
+</div>
+<script src="{{ url_for('static', filename='javascript/cookie.js')}}"></script>
+<script src="{{ url_for('static', filename='javascript/main.js')}}"></script>
+
+{% endblock %}

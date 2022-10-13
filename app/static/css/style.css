@@ -1,0 +1,142 @@
+html, body {
+    background-image: url('stat-background.jpg');
+    background-attachment: fixed;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+}
+
+/* Styling for stats page */
+.title-container {
+    text-align: center;
+    background-color: #FFCB9A;
+    font-family: "Audiowide", sans-serif;
+}
+
+.stat-container {
+    text-align: center;
+    background-image: linear-gradient(#2C3531, #070707);
+}
+
+.stat-header {
+    background-color: #D9B08C;
+}
+
+.stat-value {
+    background-color: #116466;
+}
+
+
+/* Styling for intro page */
+.intro {
+    background-color: #D9B08C;
+    font-size: medium;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+}
+
+.TIPS {
+    font-size: medium;
+    text-align: center;
+    font-family: "Audiowide", sans-serif;
+    color: whitesmoke;
+}
+
+.intro-container {
+    background-color: #D9B08C;
+}
+
+.tip-container {
+    background-image: linear-gradient(#2C3531, #116466);
+    border-color: black;
+    height: 50vh;
+}
+
+.header {
+    font-size: larger;
+    font-family: Audiowide, sans-serif;
+    font-weight: bolder
+}
+
+
+/* Styling for game page */
+.gamebox {
+    background-image: linear-gradient(#2C3531, #116466);
+    border-color: black;
+    height: 80vh;
+    position: relative;
+}
+
+.current-stat {
+    background-color: #D9B08C;
+    text-align: center;
+    font-family: Audiowide, sans-serif;
+}
+
+.prompt {
+    text-align: center;
+    font-family: Audiowide, sans-serif;
+    font-size: large;
+
+}
+
+.choice1 {
+    position:absolute;
+    top: 85%;
+    left: 15%;
+
+}
+.choice2 {
+    position:absolute;
+    top: 85%;
+    left: 75%;
+
+}
+
+.character{
+    position: absolute;
+    backface-visibility: hidden;
+    left: 35%;
+    height: 40vh;
+    width: 50vh;
+    border-radius: 30px;
+    background-image:url('admin.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center, center;
+
+}
+
+.popup {
+    position: fixed;
+    /* bring your own prefixes */
+    transform: translate(-30%, -35%);
+    top:50%;
+    left: 40%;
+    width: 50%;
+    background-color: #D9B08C;
+    text-align: center;
+    font-family: Audiowide, sans-serif;
+    font-size: small;
+}
+
+/* styling for generic common page items */
+button {
+    position: relative;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: bisque;
+}
+
+button:hover {
+    top: 5px;
+    left: 5px;
+    box-shadow: #2C3531;
+
+}
+
+
+
+
